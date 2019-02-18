@@ -43,6 +43,7 @@ public class PizzaRestDao {
        return pDao.listAllPizza();
     }
     
+    //Find by id
     @GET
     @Path("{id}")
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
