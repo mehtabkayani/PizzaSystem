@@ -56,4 +56,10 @@ public class PizzaRestDao {
         pDao.deletePizza(id);
     }
     
+    @PUT
+    @Path("{id}")
+    public void edit(@PathParam("id")Integer id, Pizza p){
+        pDao.editPizza(p);
+    }
+    
 }
