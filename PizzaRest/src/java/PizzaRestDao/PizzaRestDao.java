@@ -14,6 +14,7 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -53,6 +54,12 @@ public class PizzaRestDao {
     @Path("{id}")
     public void remove(@PathParam("id")Integer id){
         pDao.deletePizza(id);
+    }
+    
+    @PUT
+    @Path("{id}")
+    public void edit(@PathParam("id")Integer id, Pizza p){
+        pDao.editPizza(p);
     }
     
 }

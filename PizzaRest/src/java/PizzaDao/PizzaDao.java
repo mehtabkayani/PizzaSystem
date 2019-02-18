@@ -25,10 +25,6 @@ public class PizzaDao {
         em.persist(p);
     }
     
-    public void editPizza(Pizza p){
-        em.merge(p);
-    }
-    
     public void deletePizza (Integer id){
         em.remove(em.find(Pizza.class, id));
     }
