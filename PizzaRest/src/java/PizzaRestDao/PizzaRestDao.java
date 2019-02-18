@@ -49,7 +49,7 @@ public class PizzaRestDao {
     public Pizza findById(@PathParam("id")Integer id){
         return pDao.findById(id);
     }
-    
+    //Delete
     @DELETE
     @Path("{id}")
     public void remove(@PathParam("id")Integer id){
