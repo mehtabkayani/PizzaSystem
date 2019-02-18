@@ -56,6 +56,7 @@ public class PizzaRestDao {
         pDao.deletePizza(id);
     }
     
+    //Edit
     @PUT
     @Path("{id}")
     @Consumes({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
