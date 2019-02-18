@@ -56,4 +56,11 @@ public class PizzaRestDao {
         pDao.deletePizza(id);
     }
     
+    @PUT
+    @Path("{id}")
+    @Consumes({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
+     public void edit(@PathParam("id")Integer id,Pizza p){
+        pDao.editPizza(p);
+    }
+    
 }
