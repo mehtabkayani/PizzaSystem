@@ -30,7 +30,7 @@ public class PizzaRestDao {
     
     @Inject
     PizzaDao pDao;
-    
+    //Create
     @POST
     @Consumes({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
     public void createPizza(Pizza p){
