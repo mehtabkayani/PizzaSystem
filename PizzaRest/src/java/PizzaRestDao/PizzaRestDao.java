@@ -37,6 +37,7 @@ public class PizzaRestDao {
         pDao.addPizza(p);
     }
     
+    //Get all pizza
     @GET
     @Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
     public List<Pizza> getAllPizza(){
